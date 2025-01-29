@@ -47,9 +47,27 @@ main h1 {
   }
 }
 
+@media (min-width: 768px) {
+  main h1 {
+    font-size: clamp(1.5rem, 6vw, 4rem);
+  }
+
+  main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
 @media (max-width: 768px) {
   main h1 {
     font-size: clamp(1.5rem, 6vw, 4rem);
+  }
+
+  main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
   }
 }
 
@@ -58,4 +76,11 @@ main h1 {
     font-size: 4rem;
     margin-bottom: 1.5rem;
   }
+
+  main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
 }
