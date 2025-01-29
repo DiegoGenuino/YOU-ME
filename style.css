@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Poppins:wght@100;300;400;600;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  max-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  animation: backgroundChange 5s ease infinite;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main h1 {
+  font-weight: 900;
+  color: rgb(0, 0, 0);
+  font-size: clamp(2rem, 8vw, 6rem);
+}
+
+@keyframes backgroundChange {
+  0% {
+    background-image: url("imgs/RB\ Gradient\ Background\ 1.jpg");
+  }
+
+  50% {
+    background-image: url("imgs/RB\ Gradient\ Background\ 2.jpg");
+  }
+
+  70% {
+    background-image: url("imgs/RB\ Gradient\ Background\ 3.jpg");
+  }
+
+  100% {
+    background-image: url("imgs/RB\ Gradient\ Background\ 4.jpg");
+  }
+}
+
+@media (max-width: 768px) {
+  main h1 {
+    font-size: clamp(1.5rem, 6vw, 4rem);
+  }
+}
+
+@media (max-width: 480px) {
+  main h1 {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+  }
+}
